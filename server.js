@@ -34,3 +34,12 @@ app.listen(port, () => {
 app.get('/', (req, res, next) => {
     return res.status(200).json({ status: true, message: 'Welcome to Sabh! api', cheers: cool() });
 });
+
+(async function(){
+    try {
+        const identity = await agent.didManagerCreate();
+        console.log(identity);
+    } catch (error) {
+        console.log(error);
+    }
+})();
