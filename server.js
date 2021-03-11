@@ -6,6 +6,7 @@ const cors = require('cors');
 const { agent } = require('./agent');
 const morgan = require('morgan');
 const { apiInstance } = require('./axios-instance');
+const cool = require('cool-ascii-faces');
 // adding data configuration and enviroment file
 require('dotenv').config();
 
