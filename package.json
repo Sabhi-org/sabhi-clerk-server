@@ -31,7 +31,6 @@
     "moment": "^2.27.0",
     "morgan": "^1.10.0",
     "sqlite3": "^4.2.0",
-    "twilio": "^3.49.4",
     "typeorm": "^0.2.25",
     "web-did-resolver": "^1.3.5"
   },
