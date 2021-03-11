@@ -32,5 +32,5 @@ app.listen(port, () => {
 
 // default api route 😈 
 app.get('/', (req, res, next) => {
-    return res.status(200).json({ status: true, message: 'Welcome to Sabh! api', cheers: cool(), docs: `${process.env.BASE_URL}api-docs` });
+    return res.status(200).json({ status: true, message: 'Welcome to Sabh! api', cheers: cool() });
 });
