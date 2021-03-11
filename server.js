@@ -27,3 +27,9 @@ const port = process.env.PORT || 4000;
 app.listen(port, () => {
     console.log(`server is live on port ${port}`)
 });
+
+
+// default api route 😈 
+app.get('/', (req, res, next) => {
+    return res.status(200).json({ status: true, message: 'Welcome to Sabh! api', cheers: cool(), docs: `${process.env.BASE_URL}api-docs` });
+});
