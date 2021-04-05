@@ -32,14 +32,16 @@ app.listen(port, () => {
 
 // default api route 😈 
 app.get('/', (req, res, next) => {
-    return res.status(200).json({ status: true, message: 'Welcome to Sabh! api', cheers: cool() });
+    return res.status(200).json({ status: true, message: 'Welcome to Sabh! clerk server', cheers: cool() });
 });
 
-(async function(){
+
+
+const signDocument = async (req, res) => {
     try {
-        const identity = await agent.didManagerCreate();
-        console.log(identity);
+        const document = req.body.document;
+
     } catch (error) {
         console.log(error);
     }
-})();
+}
